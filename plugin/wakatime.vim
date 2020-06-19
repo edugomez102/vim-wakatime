@@ -135,10 +135,10 @@ let s:VERSION = '8.0.0'
             if s:GetIniSetting('settings', 'api_key') != '' || s:GetIniSetting('settings', 'apikey') != ''
                 let found_api_key = s:true
             endif
-            if !found_api_key
-                call s:PromptForApiKey()
-                echo "[WakaTime] Setup complete! Visit https://wakatime.com to view your coding activity."
-            endif
+            " if !found_api_key
+            "     call s:PromptForApiKey()
+            "     echo "[WakaTime] Setup complete! Visit https://wakatime.com to view your coding activity."
+            " endif
 
             let s:config_file_already_setup = s:true
         endif
